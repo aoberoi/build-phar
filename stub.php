@@ -2,8 +2,11 @@
 
 Phar::mapPhar('mycars.phar');
 
-function __autoload($name) {
-    require_once('./src/' . str_replace('\\', DIRECTORY_SEPARATOR, $name) . '.php');
-}
+spl_autoload_register(function($name) {
+    $path = '.' . DIRECTORY_SEPARATOR . 'src'. DIRECTORY_SEPARATOR . str_replace('\\', DIRECTORY_SEPARATOR, $name) . '.php';
+    if (file_exists($path)) {
+        require_once($path);
+    }
+});
 
 __HALT_COMPILER();
