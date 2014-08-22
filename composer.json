@@ -1,0 +1,20 @@
+{
+    "name": "aoberoi/build-phar",
+    "description": "just a test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ankur Oberoi",
+            "email": "aoberoi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+      "psr-4": {
+        "MyCars\\" : "src/MyCars"
+      }
+    }
+}

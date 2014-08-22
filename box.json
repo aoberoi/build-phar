@@ -1,0 +1,6 @@
+{
+  "files": ["stub.php"],
+  "directories": ["src"],
+  "output": "mycars.phar",
+  "stub": "stub.php"
+}
